@@ -1,0 +1,17 @@
+#!/bin/bash
+set -eux
+
+BASEDIR=/opt/PerfKitBenchmarker
+
+apt-get install -y git python-pip
+
+if [[ -e $BASEDIR ]]; then
+  cd $BASEDIR
+  git pull
+else
+  git clone https://github.com/GoogleCloudPlatform/PerfKitBenchmarker.git $BASEDIR
+  cd $BASEDIR
+fi
+
+pip install -U -r requirements.txt
+python setup.py install

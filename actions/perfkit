@@ -1,0 +1,6 @@
+#!/bin/bash
+set -eux
+
+# $ ./pkb.py --project=<GCP project ID> --benchmarks=iperf --machine_type=f1-micro
+# $ ./pkb.py --cloud=AWS --benchmarks=iperf --machine_type=t1.micro
+# $ ./pkb.py --cloud=Azure --machine_type=ExtraSmall --benchmarks=iperf

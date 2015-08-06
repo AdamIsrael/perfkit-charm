@@ -1,0 +1,15 @@
+perfkit:
+  description: Run a performance benchmark
+  params:
+    project:
+      description: If running on GCP, your project ID
+      type: string
+      default: ""
+    benchmark:
+      description: The benchmark to run.
+      type: string
+      default: ""
+    machine_type:
+      description: The machine instance/type to run the benchmark on
+      type: string
+      default: ""
